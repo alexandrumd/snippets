@@ -1,0 +1,16 @@
+# example of ssh config file with multiple hosts
+# to be placed in /Users/johndoe/.ssh/config
+Host gitlab git.gitlab.org.internal
+  HostName git.gitlab.org.internal
+  IdentityFile ~/.ssh/id_ed25519_gitlab_internal
+  User git
+
+Host githubme github.com
+  HostName github.com
+  IdentityFile ~/.ssh/id_ed25519_github_johndoe
+  User git
+
+Host gitlabme gitlab.com
+  HostName gitlab.com
+  IdentityFile ~/.ssh/id_ed25519_gitlab_johndoe
+  User git
